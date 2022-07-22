@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta http-equiv="refresh" content="87; url=stronaukryta.html">
+    <title>START</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="pace.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+	<link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/vnd.microsoft.icon">
+</head>
+<body>
+        <h1 class="title">Cześć Kami!</h1>
+
+        <div id="preloader">
+            <div class="p">
+			<script>
+Array.prototype.random = function(limit)
+{
+	if (typeof limit == 'undefined' || limit < 0) limit = 1;
+	else if (!limit) limit = this.length;
+	for (var i = 0, source = this, target = new Array(), n = source.length; i < limit && n > 0; i++)
+	{
+		do { var index = Math.random(); } while (index == 1);
+		index = Math.floor(index * n);
+		target.push(source[index]);
+		source[index] = source[--n];
+	}
+	return target;
+}
+
+document.write(new Array(
+// Tu wpisz kolejne elementy:
+
+'Ładowanie...',
+'Komputer wybuchnie za 10 sekund',
+'Szpaku kocur',
+'Dobranoc 🌙',
+'Idź spać',
+'Czekam',
+'CO BY CI TU NAPISAĆ?!?',
+'UCIEKAJ!!!!',
+'O nie!! On tu jest!!!',
+'CZEKAJ!!!!',
+'Uruchamianie maszyny losującej',
+'Ładowanie Bazy....',
+'Wiesz że cię kocham?😘',
+'Jedna kropka miłości jest więcej warta niż ocean dobrych chęci i rozumu.',
+'Czy ty specjalnie odświerzasz tę stronę by czytać randomowy tekst który umieściłem???<br>Mądrze</br>',
+'Przekroczyłaś 500 kliknięć. <br>Lecz się</br>',
+'Ta strona powstała przy pomocy mojego <br>M Ó Z G U</br>💡',
+'Ładowanie Kamili...(Error powód?:"Nie dziś 🤣")',
+'Ślimaki jeśli stracą oko to potrafią je sobie wychodować na nowo 👁‍🗨',
+'Mrówki nie posiadają płuc i niepotrzebny jest im sen.',
+'Ta strona powstała po to byś się mogła pomęczyć',
+'Kiedy myślisz że gram to tak naprawdę gram',
+'A to już wiesz... <br>W czasie snu wydry najczęściej trzymają się za łapki. Robią to, aby się nie rozdzielić.</br>',
+'Koala mogą spać nawet 20 godzin dziennie.<br>Ale ty przebijasz to perfekcyjnie</br>',
+'Jeśli złota rybka nie będzie miała przez dłuższy czas dostępu do światła, utraci kolor i stanie się biało-szara.',
+'Strusie posiadają większych rozmiarów oczy w porównaniu do wielkości ich mózgów.',
+'Pewnie wolałabyś czytać coś innego niż o zwierzętach ale tyle tekstów muszę wymyśleć że głowa mała',
+'Plany mam wielkie jak zawsze ale nim się do czegoś zabiorę to mijają miesiące xd',
+'A co gdybym porwał cię i rozkochał a następnie poślubił?<br>Daje do myślenia 😝</br>',
+'Sen zimowy ślimaka może trwać nawet 6 miesięcy.',
+'Już nawet nie wiem co wymyślać mam',
+'Jesteś boginią!<br>Ale to już wiesz</br>',
+'Głodująca ośmiornica jest w stanie skonsumować własną mackę.<br>Ty pewnie też... <br>Tylko nie masz macek</br>',
+'Tyle kontentu ci teraz daję że nim ogarniesz wszystkie teksty to już będziesz po trójce dzieci',
+'Instaluje wirusy (Proszę czekać)',
+'W ogóle to jestem pod mega wrażeniem że cudem tu dotarłaś a jeszcze większym że ja to ukończyłem xd',
+'Przechodę do strony porno...',
+'Zdałem sobie sprawę że żeby stworzyć taki projekt to potrzebowałem 4 lata technikum 🤔',
+'Doceń moje starania xddd',
+'Serce wieloryba bije zaledwie kilka razy na minutę (około 9), natomiast kozy prawie 90.',
+'losu losu i cyk',
+'Jestem bałwanem ⛄',
+'Podczas tworzenia strony myślę o jedzeniu',
+'Spójrz w lustro<br>Sexi, co nie 😎</br>',
+'Jest dzień 14 lipca 2022 roku a ja wymyślam te zdania',
+'Projekt zacząłem już od dawna, prawdopodobnie gdzieś w małej kapsułce pojawi się data',
+'Przez większość czasu się obijam',
+'Uwierz mi masz lepsze rzeczy do roboty niż odświerzanie ciągle strony',
+'Nie czytaj tego. <br>To ściśle fajne</br>',
+'Kręci cię to tak ciągle strone odświerzać?',
+'Godzina 15:58 dnia 14 lipca:<br>Ja:Kamili Matysiak<br>Ja:Jesteś mojom slodkom swinkom<br>Ty:O tej porze ja spałam<br>Ja:A o której ty nie śpisz?<br>Koniec</br>',
+'Misa misa jebać bydgoszcz',
+'Pająki są słodkie',
+).random().join(''));
+</script>
+		</div>
+        </div>
+
+        <script>
+
+        paceOptions = {
+        ajax: true,
+        document: true,
+        eventLag: false
+        };
+
+        Pace.on('done', function() {
+        $('.p').delay(2500).animate({top: '30%', opacity: '0'}, 4000, $.bez([0.19,1,0.22,1]));
+
+
+        $('#preloader').delay(2500).animate({top: '-100%'}, 2000, $.bez([0.19,1,0.22,1]));
+
+        TweenMax.from(".title", 2, {
+             delay: 2.8,
+                  y: 10,
+                  opacity: 0,
+                  ease: Expo.easeInOut
+            })
+       });
+
+      </script>
+
+</body>
+<h2 class="title"><p>Jeśli tu jesteś to oznacza że jesteś całkiem sprytna, ale to nie koniec przygody.<br> Na dole znajdziesz przycisk, który przeniesie cię do dalszego etapu gry.<br> Miłej zabawy!</p></h2>
+<div class="container">
+	<div class="buttons">
+		<a href="strona1.html" class="btn btn-3";>Tu kliknij 😉 </a>
+	</div>
+</div>
+</html>
