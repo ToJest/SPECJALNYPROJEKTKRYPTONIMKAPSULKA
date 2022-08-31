@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	
+}
+body{
+	animation: fadeOut 7s;
+}
+@keyframes fadeOut{
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+}
+
+section{
+	background: #111;
+	position:relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	overflow: hidden;
+}
+section .text{
+	z-index:2;
+	position: relative;
+	color: #fff;
+	max-width: 800px;
+	user-select: none;
+	font-size: 1.5em;
+}
+section .normaltext{
+	opacity:0.03;
+	z-index:1;
+	position: absolute;
+	color: #fff;
+	max-width: 800px;
+	user-select: none;
+	font-size: 1.5em;
+}
+section .text span{
+	position: relative;
+	display: inline-block;
+}
+section .text span.active{
+	animation: smoke 5s linear forwards;
+	transform-origin: bottom;
+}
+
+@keyframes smoke{
+	0%{
+		opacity: 1;
+		filter: blur(0);
+		transform: translateX(0) translateY(0) rotate(0deg)
+		scale(1);
+	}
+	50%{
+		opacity: 1;
+		pointer-events: none;
+		color:blue;
+	}
+	100%{
+		opacity: 0;
+		filter: blur(20px);
+		transform: translateX(300px) translateY(-300px) rotate(720deg)
+		scale(4);
+	}
+}
+.mygif{
+	position: absolute;
+	margin-top:500px;
+	animation: fadeOut 250s;
+}
+@keyframes fadeOut{
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity:0.2;
+	}
+}

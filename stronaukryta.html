@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UKRYTA SEKCJA 1</title>
+    <link rel="stylesheet" href="styleukryty.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+</head>
+<body>
+	<section>
+		<p class="text" >
+		On i Ona
+Jak dzień i noc
+Zupełnie różni
+
+Lato i zima
+Gorąco, zimno
+Różnice temperatur
+
+Jak susza i powódź
+Mężczyzna i kobieta
+Woda i ogień
+
+Tworzą tylko dym
+Dym?
+Czym jest dym?
+Z czego on się składa?
+Ucieka bez końca,
+unosi się w otchłaniach.
+Unosi się na wietrze.
+Więc krzyczę, Kim jesteś?
+Czy to on,
+czy to ona.
+Czy oboje w nim jesteście.
+Zrodzeni są z ognia.
+Czują się bezpiecznie.
+Dobrana kłębów para.
+Która w miejscu czekać nie chce.
+		</p>
+		<p class="normaltext">TUTAJ MUSI SIĘ POJAWIĆ KOD</p>
+	<div class="mygif">
+	
+<img src="Gifanimation.gif">
+	
+</div>
+
+	</section>
+	<script>
+	const text = document.querySelector('.text');
+	text.innerHTML = text.textContent.replace(/\S/g,"<span>$&</span>");
+	
+	const letters = document.querySelectorAll('span');
+	for (let i=0; i<letters.length; i++){
+		letters[i].addEventListener("click",function
+		(){
+			letters[i].classList.add('active')
+		})
+	}
+	</script>
+</body>

@@ -1,6 +1,6 @@
 html, body {
     background: #101010;
-	animation: fadeOut 6s;
+	animation: fadeOut 8s;
 	margin: 0;
 	padding: 0;
 	font-family: "Poppins", sans-serif;
@@ -57,7 +57,6 @@ input[type="text"]{
 }
 input[type="submit"]
 {
-	letter-spacing: 5px;
 	position: relative;
 	left: -5px;
 	border-radius: 0 25px 25px 0;

@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Libre Baskerville', serif;
+
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: #070707;
+	background-image: linear-gradient(315deg, #070707 0%, #101010 74%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	flex-direction: column;
+		animation: fadeOut2 8s;
+}
+h1{
+
+	position: absolute;
+	font-size: 25px;
+	font-weight: 100;
+	color: #292929;
+	cursor: pointer;
+	top: 38%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	letter-spacing: 7px;
+}
+h2{
+
+	font-size: 6em;
+	font-weight: 500;
+	color: #393939;
+	letter-spacing: 5px;
+	cursor: pointer;
+}
+h2 span{
+	transition: 0.5s;
+}
+
+h2:hover span:nth-child(1){
+	margin-right: 50px;
+	animation: fadeOut 3s infinite;
+}
+
+h2:hover span:nth-child(2):after{
+	content: " tobie!";
+	
+}
+h2:hover span:nth-child(2){
+	margin-left: 10px;
+	animation: fadeOut 5s infinite;
+}
+h2:hover span{
+	color: #FFFFFF;
+	text-shadow: 0 0 10px #F50C80,
+				0 0 20px #E80B79,
+				0 0 40px #CF0A6C,
+				0 0 80px #A80858,
+				0 0 120px #690537,
+				0 0 160px #FF003E;
+}
+
+@keyframes fadeOut{
+	0%    { opacity: 0; }
+  5%   { opacity: 0.2; }
+  6%   { opacity: 0; }
+  10%  { opacity: 0.1; }
+  11%   { opacity: 0; }
+  15%   { opacity: 0.4; }
+  18%  { opacity: 0.2; }
+  70%  { opacity: 1; }
+  73%  { opacity: 0.7; }
+  77%  { opacity: 1; }
+  82%  { opacity: 1; }
+  100%  { opacity: 1; }
+}
+
+h4{
+	opacity: 1;
+	color: #222;
+	position: absolute;
+	font-size: 13px;
+	top: 71%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align:center;
+	letter-spacing: 1px;
+	line-height: 1.5em;
+}
+
+#wyswietl { 
+display: none;
+}
+
+#wyswietl:target {
+display: block;
+animation: fadeOut2 8s;
+}
+@keyframes fadeOut2 {
+	0%    { opacity: 0;}
+	100%    { opacity: 1;}
+}
+@keyframes fadeOut3 {
+	0%    { opacity: 0;}
+	50% { opacity: 0;}
+	100%    { opacity: 1;}
+}
+a:link
+{
+   text-decoration: none;
+}
+
+.inputBox{
+	position: absolute;
+	width: 250px;
+	top: 88%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	}
+.inputBox input{
+		width: 100%;
+		padding: 10px;
+		border: 1px solid rgba(255,255,255,0.25);
+		background: #070707;
+		border-radius: 5px;
+		outline: none;
+		color: #fff;
+		font-size: 1em;
+		transition: 0.5s;
+		
+	}
+	.inputBox span{
+		position: absolute;
+		left: 0;
+		padding: 10px;
+		pointer-events: none;
+		font-size: 1em;
+		color: rgba(255,255,255,0.25);
+		transition: 0.5s;
+		
+	}
+	.inputBox input:valid ~ span,
+	.inputBox input:focus ~ span
+	{
+		color: #1d2b3a;
+		transform: translateX(75px) translateY(-7px);
+		font-size: 0.65em;
+		padding: 0 10px;
+		background: #fff;
+		border-left: 1px solid #00dfc4;
+		border-right: 1px solid #00dfc4;
+		letter-spacing: 0.2em;
+		border-radius: 2px;
+	}
+	.inputBox input:valid,
+	.inputBox input:focus
+	{
+		border: 1px solid;
+	}
+input[type=submit]{
+	position: absolute;
+	top: 93%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  background: #000;
+  border:0;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: helvetica;
+  font-size: 12px;
+  letter-spacing: 3px;
+  transition:         all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  cursor: pointer;
+  display: block;
+}
