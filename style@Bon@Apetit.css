@@ -10,9 +10,35 @@
 html, body {
 	background: #121821;
 	box-sizing: border-box;
-	background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
 	font-family: "Poppins", sans-serif;
 }
+
+html, body {
+    background: linear-gradient(218deg, #d25e00, #d7a300, #00ced9, #0080d7, #d700e2, #e40059, #00ddae, #00e13a);
+    background-size: 1600% 1600%;
+
+    -webkit-animation: AnimationName 190s ease infinite;
+    -moz-animation: AnimationName 190s ease infinite;
+    animation: AnimationName 190s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:78% 0%}
+    50%{background-position:23% 100%}
+    100%{background-position:78% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:78% 0%}
+    50%{background-position:23% 100%}
+    100%{background-position:78% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:78% 0%}
+    50%{background-position:23% 100%}
+    100%{background-position:78% 0%}
+}
+
+
 @keyframes fadeOut{
 	from{
 		opacity:0;
@@ -21,8 +47,41 @@ html, body {
 		opacity:1;
 	}
 }
-h3{
+h4{
+	text-align:center;
+	animation: fadeh4 14s;
 	color: white;
+	font-size:35px;
+	font-weight: 200;
+}
+@keyframes fadeh4 {
+  0% { opacity: 0; }
+  0% { font-size: 25px; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+h5{
+	float:none;
+	text-align:center;
+	animation: fadeh5 14s;
+	color: white;
+	font-size:50px;
+	font-weight: 200;
+	letter-spacing: 55px;
+}
+@keyframes fadeh5 {
+  0% { opacity: 0; }
+  0% { font-size:5px}
+  75% { opacity: 0; }
+  100% { font-size:50px}
+  100% { opacity: 1; }
+}
+h3{
+	text-align:center;
+	animation: fadeOut 12s;
+	color: white;
+	font-size:15px;
+	font-weight: 400;
 }
 h1{
 	text-align:center;
